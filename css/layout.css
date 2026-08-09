@@ -9,7 +9,7 @@
 #scene{
     position:relative;
     aspect-ratio:16/9;
-    width:min(100vw, calc(94dvh * 16 / 9));
+    width:min(100vw, calc(90dvh * 16 / 9));
     overflow:hidden;
     background:#d7d1c7;
 }
