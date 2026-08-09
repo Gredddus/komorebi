@@ -495,6 +495,7 @@
     width:10.7%;
     left:84.2%;
     top:2.7%;
+    container-type: inline-size;
     background-image:url("../assets/objects/clock.png");
     background-size:contain;
     background-repeat:no-repeat;
@@ -504,7 +505,7 @@
     align-items:center;
 }
 #clock span{
-    font-size:3vw;
+    font-size:32cqw;
     font-family:monospace;
     color:rgb(255, 0, 0);
     text-shadow:
@@ -812,10 +813,3 @@ z-index:2;
         padding: 12px 25px;
     }
 }
-/*@media (min-aspect-ratio: 16/10) and (max-aspect-ratio: 16/9) {
-
-    #scene{
-        width:min(100vw, calc(94dvh * 16 / 9));
-    }
-
-}*/

@@ -239,7 +239,7 @@ function openWelcome(){
     };
 }
 
-
+openWelcome();
 
 const postit=document.getElementById("postit-1");
 postit.addEventListener("click",()=>{
