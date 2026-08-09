@@ -1,6 +1,6 @@
 #komorebi{
     width:100vw;
-    height:100vh;
+    height:100dvh;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -9,7 +9,7 @@
 #scene{
     position:relative;
     aspect-ratio:16/9;
-    width:min(100vw,177.78vh);
+    width:min(100vw, calc(100dvh * 16 / 9));
     overflow:hidden;
     background:#d7d1c7;
 }
@@ -437,7 +437,7 @@
     border-radius:50%;
     opacity:0;
     pointer-events:none;
-    translate:(-8%, -8%);
+    transform:translate(-8%, -8%);
 }
 #camera:hover::after{
     animation:cameraFlash 0.35s ease-out;
@@ -772,10 +772,6 @@ z-index:2;
     font-size:2.5rem;
     margin-bottom:20px;
 }
-/*#welcome h2{
-    font-size:1.5rem;
-    margin-bottom:20px;
-}*/
 #welcome p{
     font-size:1.1rem;
     margin-bottom:25px;
@@ -792,4 +788,27 @@ z-index:2;
 #welcome button:hover{
     cursor:pointer;
     scale:1.05;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    #welcome {
+        width: 85vw;
+        padding: 20px;
+    }
+    #welcome h1 {
+        font-size: 2rem;
+    }
+    #welcome p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    #start-btn {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
 }

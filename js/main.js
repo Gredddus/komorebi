@@ -116,11 +116,8 @@ function openVideoGallery(videos){
     const next=document.getElementById("lightbox-next");
     function updateVideo(){
         video.src=videos[current].src;
-
         title.textContent=videos[current].title;
-
         description.textContent=videos[current].description;
-
         video.load();
         video.play();
     }
@@ -168,13 +165,6 @@ monitorTv.addEventListener("click",()=>{
         title:"Loop video",
         description:"Animación experimental realizada en After Effects."
         },
-        /*
-        {
-        src:"assets/videos/video-4.mp4",
-        title:"Loop video",
-        description:"Animación experimental realizada en After Effects."
-        },*/
-
         {
         src:"assets/videos/video-4-test.mp4",
         title:"Loop video",
@@ -206,37 +196,7 @@ phone.addEventListener("click",()=>{
 
 
 
-/*<h2>Take your time</h2>
 
-function openWelcome(){
-    lightboxContent.innerHTML=`
-        <div id="welcome">
-            <h1>Komorebi</h1>
-            <p>
-                Bienvenido.
-                Este no es un portafolio tradicional.
-                Explora el escritorio.
-                Cada objeto contiene una parte de mi trabajo,
-                mis proyectos o un pequeño detalle sobre mí.
-            </p>
-            <button class="glow-on-hover" type="button" id="start-btn">
-                Comenzar
-            </button>
-        </div>
-    `;
-    lightbox.classList.add("active");
-    document
-        .getElementById("start-btn")
-        .onclick=()=>{
-            lightbox.classList.remove("active");
-        };
-}
-openWelcome();
-const postit=document.getElementById("postit-1");
-postit.addEventListener("click",()=>{
-    openWelcome();
-});
-*/
 function openWelcome(){
     const isMobile = window.innerWidth <= 768;
     if (isMobile) {
