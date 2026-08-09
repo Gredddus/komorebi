@@ -1,0 +1,10 @@
+:root{
+
+    --room-width: 1920;
+    --room-height: 1080;
+
+    --transition: .35s ease;
+
+    --shadow: 0 10px 30px rgba(0,0,0,.25);
+
+}

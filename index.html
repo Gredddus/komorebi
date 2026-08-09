@@ -5,15 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Komorebi | Take your time</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <h1>Komorebi</h1>
+    <main id="komorebi">
 
+        <section id="scene">
 
-    <h2>Welcome</h2>
+            <!--Fondo-->
+            <div id="wall"></div>
 
+            <!-- Muebles -->
+            <div id="window">
+                <div id="window-bg"></div>
+                <div id="window-plants">
+                    <div id="plant-1"></div>
+                    <div id="plant-2"></div>
+                    <div id="plant-3"></div>
+                </div>
+                <div id="window-frame"></div>
+            </div>
+            <div id="desk"></div>
+
+            <!-- Pantallas -->
+            <div id="monitor-tv" class="item gallery-video monitor-container" ></div>
+            <div id="monitor"></div>
+
+            <!-- Repisas -->
+            <div id="shelf-down"></div>
+            <div id="shelf-up"></div>
+
+            <!-- Objetos -->
+            <div id="objects">
+                <div id="lightbox">
+                    <button id="close-lightbox">✕</button>
+                <div id="lightbox-content">
+                    <div id="photo-frame">
+                        <img id="photo-image" src="assets/photos/test.jpg">
+                        <img id="photo-instax" src="assets/objects/instax-frame.png">
+                    </div>
+                    <div id="gallery">  
+                        <button id="next">></button>
+                        <button id="prev"><</button>
+                    </div>
+                </div>
+                </div>
+            <div id="postit-block" class="item"></div>
+            <div id="postit-1" class="item"></div>
+            <div id="postit-2" class="item"></div>
+            <div id="pencil" class="item"></div>
+
+            <div id="instax-2" class="item instax" data-photo="assets/photos/self3.jpg" data-position=" bottom center"></div>
+            <div id="speakers" class="item"></div>
+
+            <div id="mouse" class="item"></div>
+            <div id="keyboard" class="item"></div>
+
+            <div id="mug" class="item"></div>
+
+            <div id="instax-1" class="item instax" data-photo="assets/photos/self4.jpg" data-position="  top "></div>
+            <div id="plant" class="item"></div>
+
+            <div id="desk-lamp" class="item"></div>
+            
+            <div id="book-1" class="item"></div>
+            <div id="book-2" class="item"></div>
+            <div id="book-3" class="item"></div>
+            <div id="book-4" class="item"></div>
+            <div id="instax-3" class="item instax" data-photo="assets/photos/self2.png" data-position="top center"></div>
+
+            <div id="crystal" class="item"></div>
+            <div id="instax-4" class="item instax" data-photo="assets/photos/self1.jpg" data-position="top center"></div>
+            <div id="camera" class="item gallery"></div>
+
+            <div id="clock" class="item">
+                <span id="clock-time"></span>
+            </div>
+
+            <div id="phone" class="item"></div>
+            <div id="ray-light" class="item"></div>
+        </div>
+        </section>
+    </main>
+    <script src="js/scene.js"></script>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
