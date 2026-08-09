@@ -206,7 +206,7 @@ phone.addEventListener("click",()=>{
 
 
 
-/*<h2>Take your time</h2>*/
+/*<h2>Take your time</h2>
 
 function openWelcome(){
     lightboxContent.innerHTML=`
@@ -236,9 +236,55 @@ const postit=document.getElementById("postit-1");
 postit.addEventListener("click",()=>{
     openWelcome();
 });
+*/
+function openWelcome(){
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+        lightboxContent.innerHTML = `
+            <div id="welcome">
+                <h1>Komorebi</h1>
+                <p>
+                    Esta experiencia está diseñada para disfrutarse
+                    en una pantalla grande.
+                </p>
+                <p>
+                    Para explorar Komorebi cómodamente,
+                    te recomiendo abrirlo en una computadora.
+                </p>
+                <button class="glow-on-hover" type="button" id="start-btn">
+                    Continuar
+                </button>
+            </div>
+        `;
+    } else {
+        lightboxContent.innerHTML = `
+            <div id="welcome">
+                <h1>Komorebi</h1>
+                <p>
+                    Bienvenido.
+                    Este no es un portafolio tradicional.
+                    Explora el escritorio.
+                    Cada objeto contiene una parte de mi trabajo,
+                    mis proyectos o un pequeño detalle sobre mí.
+                </p>
+                <button class="glow-on-hover" type="button" id="start-btn">
+                    Comenzar
+                </button>
+            </div>
+        `;
+    }
+    lightbox.classList.add("active");
+    document.getElementById("start-btn").onclick = () => {
+        lightbox.classList.remove("active");
+    };
+}
 
 
 
+const postit=document.getElementById("postit-1");
+postit.addEventListener("click",()=>{
+    openWelcome();
+});
 
 
 const monitor = document.getElementById("monitor");
