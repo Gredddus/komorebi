@@ -703,11 +703,14 @@ z-index:2;
 
 #lightbox-player{
     width:min(80vw,900px);
+    max-height:90vh;
 }
 #portfolio-video{
     width:100%;
     border-radius:16px;
     display:block;
+    max-height:65vh;
+    object-fit:contain;
 }
 #lightbox-controls{
     display:flex;

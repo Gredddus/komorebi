@@ -151,7 +151,7 @@ monitorTv.addEventListener("click",()=>{
         {
         src:"assets/videos/video-1.mp4",
         title:"Cortinilla Greddus",
-        description:"Video/Transición para escenas."
+        description:"Video/Transición para escenas realizado en After Effects."
         },
 
         {
@@ -165,11 +165,13 @@ monitorTv.addEventListener("click",()=>{
         title:"Loop video",
         description:"Animación experimental realizada en After Effects."
         },
+        
         {
         src:"assets/videos/video-4-test.mp4",
         title:"Loop video",
         description:"Animación experimental realizada en After Effects."
         },
+
         {
         src:"assets/videos/video-5.mp4",
         title:"Loop video",
