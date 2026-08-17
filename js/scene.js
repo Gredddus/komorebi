@@ -19,7 +19,7 @@ if(hour >= 7 && hour < 18){
         'url("assets/lighting/sunlight.png")';
     wallElement.style.backgroundImage = 'url("assets/wall/wall-day.png")';
 }
-else if(hour >= 18 && hour < 19){
+else if(hour >= 18 && hour < 20){
     // Atardecer
     windowElement.style.backgroundImage = 'url("assets/furniture/window-sunset-bg.png")';
 
