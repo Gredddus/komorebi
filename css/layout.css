@@ -816,3 +816,33 @@ z-index:2;
         padding: 12px 25px;
     }
 }
+
+
+@keyframes css-random-pop {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.015);
+    }
+}
+
+#monitor {
+    animation: css-random-pop 2s ease-in-out infinite;
+    animation-delay: 9s;
+}
+
+#monitor-tv {
+    animation: css-random-pop 2s ease-in-out infinite;
+    animation-delay: 7s;
+}
+
+#camera {
+    animation: css-random-pop 2s ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+#phone {
+    animation: css-random-pop 2s ease-in-out infinite;
+    animation-delay: 3s;
+}
