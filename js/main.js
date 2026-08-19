@@ -203,7 +203,7 @@ function openWelcome(){
     const isMobile = window.innerWidth <= 768;
     if (isMobile) {
         lightboxContent.innerHTML = `
-            <div id="welcome">
+            <div id="welcome" class="mobile-dashboard">
                 <h1>Komorebi</h1>
                 <p>
                     Esta experiencia está diseñada para disfrutarse
@@ -218,6 +218,9 @@ function openWelcome(){
                 </button>
             </div>
         `;
+
+
+
     } else {
         lightboxContent.innerHTML = `
             <div id="welcome">

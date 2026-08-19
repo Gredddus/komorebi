@@ -1,0 +1,69 @@
+@media (max-width: 768px) {
+    /* Ocultamos todo lo decorativo del cuarto que no sea interactivo para ahorrar espacio */
+    #scene {
+        width: 100%;
+        max-width: 90%;
+        height: auto;
+        aspect-ratio: 3 / 4; /* Rectángulo vertical */
+        background: #f7f3ea; /* Mantenemos tu tono de papel/estética */
+        border-radius: 24px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        padding: 20px;
+    }
+
+    /* Ocultamos los elementos del escritorio que no son los 4 principales */
+    #wall, #window, #desk, #shelf-up, #shelf-down, #plant, #mug, #keyboard, #mouse, 
+    #pencil, #postit-block, #postit-1, #postit-2, #speakers, #desk-lamp, #book-1, 
+    #book-2, #book-3, #book-4, #crystal, #clock, #ray-light, 
+    [id^="instax-"] {
+        display: none !important;
+    }
+
+
+    #monitor-tv{
+        position: absolute;
+        left: auto;
+        top: 10%;
+        width: 50%;
+    }
+
+    #monitor{
+        position: absolute;
+        left: auto;
+        top: 30%;
+        width: 50%;
+    }
+    #camera{
+        position: absolute;
+        left:25%;
+        top: 60%;
+        width: 50%;
+    }
+    #phone{
+        position: absolute;
+        left: 25%;
+        top: 30%;
+        width: 50%;
+    }
+
+
+    /* Efecto hover/touch para que crezcan un poquito al presionarlos */
+    #monitor:hover, #monitor-tv:hover, #camera:hover, #phone:hover {
+        transform: scale(1.05);
+        filter: brightness(1.2);
+    }
+
+
+
+
+
+
+
+
+}
