@@ -4,8 +4,8 @@
         width: 100%;
         max-width: 90%;
         height: 90%;
-        aspect-ratio: 3 / 4; /* Rectángulo vertical */
-        background: #f7f3ea; /* Mantenemos tu tono de papel/estética */
+        aspect-ratio: 3 / 4; 
+        background: #f7f3ea; 
         border-radius: 24px;
         box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         display: flex;
@@ -17,7 +17,6 @@
         padding: 20px;
     }
 
-    /* Ocultamos los elementos del escritorio que no son los 4 principales */
     #wall, #window, #desk, #shelf-up, #shelf-down, #plant, #mug, #keyboard, #mouse, 
     #pencil, #postit-block, #postit-1, #postit-2, #speakers, #desk-lamp, #book-1, 
     #book-2, #book-3, #book-4, #crystal, #clock, #ray-light, 
@@ -29,37 +28,63 @@
     #monitor-tv{
         position: absolute;
         left: auto;
-        top: 10%;
+        top: 5%;
         width: 50%;
     }
 
     #monitor{
         position: absolute;
         left: auto;
-        top: 30%;
+        top: 25%;
         width: 50%;
     }
     #camera{
         position: absolute;
         left:25%;
-        top: 53%;
+        top: 48%;
         width: 50%;
     }
     #phone{
         position: absolute;
         left: 25%;
-        top: 75%;
+        top: 72%;
         width: 50%;
     }
 
 
-    /* Efecto hover/touch para que crezcan un poquito al presionarlos */
     #monitor:hover, #monitor-tv:hover, #camera:hover, #phone:hover {
         transform: scale(1.05);
         filter: brightness(1.2);
     }
 
+@keyframes css-random-pop {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.015);
+    }
+}
 
+#monitor {
+    animation: css-random-pop 2s ease-in-out infinite;
+    animation-delay: 9s;
+}
+
+#monitor-tv {
+    animation: css-random-pop 2s ease-in-out infinite;
+    animation-delay: 7s;
+}
+
+#camera {
+    animation: css-random-pop 2s ease-in-out infinite;
+    animation-delay: 5s;
+}
+
+#phone {
+    animation: css-random-pop 2s ease-in-out infinite;
+    animation-delay: 3s;
+}
 
 
 
