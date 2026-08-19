@@ -3,7 +3,7 @@
     #scene {
         width: 100%;
         max-width: 90%;
-        height: auto;
+        height: 90%;
         aspect-ratio: 3 / 4; /* Rectángulo vertical */
         background: #f7f3ea; /* Mantenemos tu tono de papel/estética */
         border-radius: 24px;
@@ -42,13 +42,13 @@
     #camera{
         position: absolute;
         left:25%;
-        top: 60%;
+        top: 53%;
         width: 50%;
     }
     #phone{
         position: absolute;
         left: 25%;
-        top: 30%;
+        top: 75%;
         width: 50%;
     }
 
